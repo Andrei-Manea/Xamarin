@@ -1,0 +1,5 @@
+﻿TO DO:
+- Modularizarea aplicatiei
+- Generarea de teste unitare
+- Generarea de teste de UI
+- Generarea unui pachet gata de deployment

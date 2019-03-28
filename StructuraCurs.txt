@@ -1,0 +1,46 @@
+################################ Prerequisites ################################
+- 2.NET sau echivalentul
+- cunostiinte de C# sau capacitatea de invatare rapida
+- posibil PC cu Xamarin Forms in caz ca nu terminati de lucrat la laborator/
+doriti sa lucrati in plus la proiect
+- dorinta de a invata dezvoltare mobila
+
+################################ Organizatoric ################################
+Structura materiale = 8 Module (curs + Laborator)
+Laboratoare = Au scop de prezetare, dar si parti cu TO DO
+
+Proiect:
+- O aplicatie in Xamarin Forms, absolut orice doriti voi, dar sa respecte
+cerintele minime
+- Cerinte minime: Eran Autentificare, Eran principal si Ecran Setari, fiecare
+cu functionalitatea la care ne-am astepta cand auzim titlul; Aplicatia trebuie
+sa fie intuitiva; Codul aplicatiei trebuie sa fie usor de inteles
+- Reprezinta 60% din punctaj
+- Trebuie sa indepliniti cerintele minime pentru a promova
+- In saptamana i + 1 prezentati ce ati lucrat la proiect in saptamana i, unde i
+este de la 1 la 7
+- Proiectul, in forma finala, se prezinta in saptamana 9
+- Ce este frumos sa aveti: date persistente, setari, cam tot ce am facut la 
+curs, PRISM
+
+Examen final:
+- 4H, 40% din punctajul final
+- Este nevoie de minim jumatate din punctajul examenului pentru a promova
+- Vi se va da o specificatie conform ce ati invatat la curs si va trebui sa
+dezvoltati o aplicatie pentru aceasta specificatie
+- Se da in saptamana 10
+
+
+Primele 8 saptamani:
+- Curs de maxim 2H, cu pauza la fiecare ora
+- Urmeaza 2H pentru laborator/proiectul vostru/prezentare etapa anterioara
+
+Extra:
+- Cursul este gandit ca in 2 ore sa va permita mai mult decat suficiente 
+intrebari pentru materialul prezentat si nu numai
+- In curs nu (prea) va exista cod, codul este pentru laborator
+- Laboratorul este gandint sa fie vizualizat in maxim jumatate de ora 
+si TODO-urile sa va ajute in proiectul vostru, eventual pentru 
+a fi preluate cu copy-paste in proiectul vostru
+- Puteti sa lucracti si de acasa la proiect, de aceea 
+va recomand sa lucrati pe GIT

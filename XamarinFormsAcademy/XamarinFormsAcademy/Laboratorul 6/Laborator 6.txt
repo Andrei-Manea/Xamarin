@@ -1,0 +1,8 @@
+﻿Partea 1:
+- https://appcenter.ms/apps
+- Ne facem cont si inregistram aplicatia pe Android/UWP
+- Urmam pasii si ne adaugam Exception Tracking/Event Analysis
+
+Partea 2:
+- https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/messaging-center
+- Folosim acest link si determinam intre ce 2 componente dorim sa comunicam

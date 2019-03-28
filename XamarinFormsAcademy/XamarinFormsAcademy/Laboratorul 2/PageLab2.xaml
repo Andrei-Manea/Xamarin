@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsAcademy.Laboratorul_2.PageLab2">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <!-- *, similar cu auto, inseamna 
+                "Foloseste tot spatiul ramas, in mod proportional"-->
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Cum am mai spus, putem sa avem un layout intr-un layout-->
+            <Grid Grid.Row="2" >
+                <!-- Daca pentru linii ne-am legate de proprietatea Height, pentru coloane
+                ne vom lega de proprietatea Width (lungime si latime)-->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Prin combinatia row si column am ales dreapta jos-->
+                <StackLayout  Grid.Column="1">
+                    <!-- Prin x:Name imi setez o referinta catre obiect-->
+                    <Label Text="Eu sunt doar un text" x:Name="DoarUnLabel"/>
+                    <Entry x:Name="DoarUnEntry"/>
+                </StackLayout>
+                <!-- Prin combinatia row si column am ales dreapta jos-->
+                <StackLayout Grid.Column="0">
+                    <Label Text="Aici ar trebui sa fie un numar" x:Name="LabelNumar"/>
+                    <Stepper Minimum="0" Maximum="1" Increment="0.01" x:Name="StepperReal"/>
+                </StackLayout>
+            </Grid>
+            
+            <!-- Un scroll View are un singur copil-->
+            <ScrollView Grid.Row="0">
+                <Label x:Name="ReallyBigText" Text=""></Label>
+            </ScrollView>
+            
+            <!-- TO DO: Aveti Grid.Row="1" la dispozitie, have fun-->
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

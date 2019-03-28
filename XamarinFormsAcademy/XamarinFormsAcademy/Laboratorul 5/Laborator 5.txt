@@ -1,0 +1,5 @@
+﻿Din Xamarin Essentials va puteti folosi, pentru proiectul vostru, cel putin de:
+- Preferences
+- App Information
+- Main Thread
+- Version Tracking
