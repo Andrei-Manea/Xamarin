@@ -11,7 +11,11 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            
+            <Grid Grid.Row="0" BackgroundColor="Red"/>
+            <Grid Grid.Row="1" BackgroundColor="Black">
+                <Image  x:Name="PapaVatican" HeightRequest="400" WidthRequest="400"/>
+            </Grid>
+
             <!-- Cum am mai spus, putem sa avem un layout intr-un layout-->
             <Grid Grid.Row="2" >
                 <!-- Daca pentru linii ne-am legate de proprietatea Height, pentru coloane
@@ -30,15 +34,15 @@
                 <!-- Prin combinatia row si column am ales dreapta jos-->
                 <StackLayout Grid.Column="0">
                     <Label Text="Aici ar trebui sa fie un numar" x:Name="LabelNumar"/>
-                    <Stepper Minimum="0" Maximum="1" Increment="0.01" x:Name="StepperReal"/>
+                    <Stepper Minimum="0" Maximum="1" Increment="0.1" x:Name="StepperReal"/>
                 </StackLayout>
             </Grid>
-            
+
             <!-- Un scroll View are un singur copil-->
-            <ScrollView Grid.Row="0">
+            <ScrollView Grid.Row="0" HeightRequest="200" WidthRequest="200" BackgroundColor="Azure" VerticalOptions ="Center" HorizontalOptions="Center">
                 <Label x:Name="ReallyBigText" Text=""></Label>
             </ScrollView>
-            
+
             <!-- TO DO: Aveti Grid.Row="1" la dispozitie, have fun-->
         </Grid>
     </ContentPage.Content>

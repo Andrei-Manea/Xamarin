@@ -27,7 +27,8 @@ namespace XamarinFormsAcademy
 
             // Ii spunem paginii de navigare ca prima pagina cu care ne vom intalni
             // este StartPageLab1, aceasta o puteti modifica voi oricand
-            NavigationMethod.PushAsync(new Page());
+            NavigationMethod.PushAsync(new PageLab2());
+
 
             // Aici vom seta pagina care va fi afisata prima si care
             // va fi radacina vizuala a aplicatiei noastre

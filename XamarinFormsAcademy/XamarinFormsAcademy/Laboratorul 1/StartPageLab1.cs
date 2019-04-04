@@ -1,10 +1,11 @@
-﻿
+﻿using MyPopUp;
 using Xamarin.Forms;
 
 namespace XamarinFormsAcademy.Laboratorul_1
 {
     // Nu este nevoie sa aveti si XAML pentru o pagina, va puteti construi
     // aplicatia doar cu cod
+    
     public class StartPageLab1 : ContentPage
     {
         /*
@@ -28,9 +29,10 @@ namespace XamarinFormsAcademy.Laboratorul_1
                         VerticalOptions = LayoutOptions.CenterAndExpand,
                         // Comanda este o comanda de navigare catre noua pagina
                         Command = new Command(
-                            () => App.NavigationMethod.PushAsync(new TabbedPageLab1())
+                            () => App.NavigationMethod.PushAsync(new MyPopUpPage())
                             )
                     }
+                    
                 }
             };
 
