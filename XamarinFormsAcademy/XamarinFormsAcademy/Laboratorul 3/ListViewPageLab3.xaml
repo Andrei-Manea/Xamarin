@@ -4,31 +4,49 @@
              x:Class="XamarinFormsAcademy.Laboratorul_3.ListViewPageLab3">
     <ListView x:Name="MyListView"
             ItemsSource="{Binding Items}"
+              HasUnevenRows="True"
             ItemTapped="Handle_ItemTapped"
             CachingStrategy="RecycleElement">
 
         <!--Built in Cells-->
         <!-- Aici este afisata ce se gaseste ca string -->
-        <ListView.ItemTemplate>
+        <!--<ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding .}" />
             </DataTemplate>
-        </ListView.ItemTemplate>
+        </ListView.ItemTemplate>-->
 
         <!--TO DO: Folositi un template mai complicat cu cel putin 3 proprietati -->
-        <!--<ListView.ItemTemplate>
+        <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <StackLayout>
-                        <Label Text="{Binding Text}" 
-                    />
-                        <Label Text="{Binding Detail}" 
-                   />
-                        <Button/>
+                        <Label Text ="{Binding Name}"/>
+                        <StackLayout>
+                            <Label Text ="{Binding Age}" HorizontalOptions="Center"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                <Label Text="{Binding MinAge}" 
+                                       Grid.Column="0"/>
+                                <ProgressBar Progress="{Binding AgeDisplay}"
+                                             Grid.Column="1"/>
+                                <Label Text="{Binding MaxAge}"
+                                       Grid.Column="2"/>
+                            </Grid>
+                        </StackLayout>
+                        
+                        <Label Text="{Binding Height}"/>
                     </StackLayout>
+                    
+
                 </ViewCell>
             </DataTemplate>
-        </ListView.ItemTemplate>-->
+        </ListView.ItemTemplate>
     </ListView>
 
 </ContentPage>
