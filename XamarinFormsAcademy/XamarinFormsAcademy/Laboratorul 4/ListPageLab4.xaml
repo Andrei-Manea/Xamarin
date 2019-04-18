@@ -4,6 +4,7 @@
              x:Class="XamarinFormsAcademy.Laboratorul_4.ListPageLab4">
     <StackLayout>
         <Button Clicked="Button_Clicked" Text="+" HorizontalOptions="Center"/>
+        <Button Clicked="Button_Clicked_1" Text="Refresh" HorizontalOptions="Center"/>
         <ScrollView VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
             <ListView x:Name="MyListView"
             ItemsSource="{Binding Items}"

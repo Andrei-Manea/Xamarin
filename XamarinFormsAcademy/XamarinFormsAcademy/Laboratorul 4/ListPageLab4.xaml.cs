@@ -3,7 +3,6 @@ using DataAccessLayer.DTO;
 using System;
 using System.Collections.ObjectModel;
 using System.Linq;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -32,18 +31,24 @@ namespace XamarinFormsAcademy.Laboratorul_4
         }
 
         // TO DO: Folosind acelst Handler si niste modificari in XAML,
-        // faceti item-ul editabil
+        // faceti item-ul editabil`
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             if (e.Item == null)
                 return;
-
-            await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
+            
+            await Navigation.PushAsync(new NewPage((ShoppingItem)e.Item));
 
             //Deselect Item
             ((ListView)sender).SelectedItem = null;
         }
-
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Items = new ObservableCollection<ShoppingItem>(Database.Instance.GetItemsAsync().Result);
+            MyListView.ItemsSource = Items;
+            
+        }
         private void Button_Clicked(object sender, EventArgs e)
         {
             // Din cauza constrangerii, dorim sa ne asiguram ca nu vom primi o exceptie
@@ -59,6 +64,12 @@ namespace XamarinFormsAcademy.Laboratorul_4
             Database.Instance.UpdateItemData(toAdd);
             // Il vom adauga in lista
             Items.Add(toAdd);
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Items = new ObservableCollection<ShoppingItem>(Database.Instance.GetItemsAsync().Result);
+            MyListView.ItemsSource = Items;
         }
     }
 }
