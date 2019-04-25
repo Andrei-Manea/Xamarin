@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsAcademy.Pages.Auth">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Username"
+                   WidthRequest="500"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Entry x:Name="Username"
+                   WidthRequest="500"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Label Text="Password"
+                   WidthRequest="500"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Entry x:Name="Password"
+                   WidthRequest="500"
+                   IsPassword="True"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Switch x:Name="RememberMe"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+            <Button Text="Login"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinFormsAcademy.Utils;
 
 namespace XamarinFormsAcademy.Laboratorul_4
 {
@@ -57,7 +58,7 @@ namespace XamarinFormsAcademy.Laboratorul_4
             // Vom crea un nou element, cat mai simplu
             ShoppingItem toAdd = new ShoppingItem {
                 ID= itemID,
-                ItemName = $"Item_{itemID:000}"
+                ItemName = itemID.ToCoolString()
             };
 
             // Il vom adauga sau updata in baza de date
