@@ -34,7 +34,7 @@ namespace XamarinFormsAcademy
             // va fi radacina vizuala a aplicatiei noastre
             MainPage = NavigationMethod;
 
-            // In fiecare clasa aveti TO DO-uri, spor si bafta! Mai jos le gasiti pe cele din aceasta
+            // In fiecare clasa aveti TO DO-uri, spor si bafta! Mai jos le gasiti pe cele   aceasta
             // Clasa, separate pentru fiecare laborator
             // TO DO LAB 1 - Folositi pagina de start pentru Laboratorul 1
             // TO DO LAB 1 - Instalati "Rg.Plugins.Popup" si urmariti "GettingStarted"

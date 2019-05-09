@@ -56,7 +56,7 @@ namespace XamarinFormsAcademy.Pages
 
             if (loggedIn || (Settings.Password == password))
             {
-                await Navigation.PushAsync(new PageLab2());
+                await Navigation.PushAsync(new Home());
             }
             else
             {
