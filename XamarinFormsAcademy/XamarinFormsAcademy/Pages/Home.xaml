@@ -8,9 +8,9 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
-                
+
             </Grid.RowDefinitions>
-            
+
             <ImageButton x:Name = "AddButton"
                          HorizontalOptions="Center"
                          VerticalOptions="End"
@@ -19,8 +19,24 @@
                          Clicked="ImageButton_Clicked"
                          Grid.Row="1"
                 />
-            
-            
+            <ListView x:Name="MyListView"
+                      HasUnevenRows="True"
+                      ItemsSource="{Binding Items}"
+                      CachingStrategy="RecycleElement">
+
+                <!--Custom View Cells-->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding ID}" />
+                                <Label Text="{Binding Content}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>
